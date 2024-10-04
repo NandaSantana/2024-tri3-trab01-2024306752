@@ -5,52 +5,71 @@ body {
     box-sizing: border-box;
 }
 
-header { 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+main{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  position: absolute;
+  background-color: #2C9303;
+  right: 0;
+  top: 10vw;
+  width: 94%;
+  height: 3.3vw;
+  clip-path: polygon(0 0, 99% 15%, 99.2% 100%);
+}
+
+header::before {
+  position: absolute;
+  background-color: #1D6904;
+  right: 0;
+  top: 11vw;
+  width: 85%;
+  height: 4.6vw;
+  clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
+}
+
+.banners {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 5vw;
+}
+
+.banners img {
+    height: 8vw;
+}
+
+header h1 {
     text-align: center;
-    padding: 20px;
+    margin-top: 6.3vw;
+    font-size: 160%;
+    padding: 0 5vw;
 }
 
-.banner { 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 80px; 
-  margin-bottom: 50px; 
-}
-
-.logoifc {
-  max-width: 25vw; 
-  height: auto;
- }
-
- .bannerfice {
-  
-  max-width: 25vw; 
-  height: auto;
- }
-
- h1 {
-     font-size: 27px;
+header p {
+    text-align: center;
+    margin: 0;
   }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 95vw;
-}
-
-.ceit {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-
-.coluna {
-    padding: 20px;
-}
-
-  
+main{
+    padding: 2vw;
+    columns: 2;
+    column-gap: 1.5vw;
+  }
