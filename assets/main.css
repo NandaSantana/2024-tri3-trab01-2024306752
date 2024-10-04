@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  background-position: center 20px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 400vh;
+
 
 body,
 html {
@@ -17,7 +19,8 @@ html {
 }
 
 header,
-main{
+main,
+footer{
   width: 80vw;
   margin: 0 auto;
 }
@@ -27,6 +30,7 @@ header {
 }
 
 header::after {
+  content: " ";
   position: absolute;
   background-color: #2C9303;
   right: 0;
@@ -37,6 +41,7 @@ header::after {
 }
 
 header::before {
+  content:" ";
   position: absolute;
   background-color: #1D6904;
   right: 0;
@@ -46,13 +51,13 @@ header::before {
   clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
 }
 
- header .banners {
+ header .logos {
     display: flex;
     justify-content: space-around;
     padding: 2vh 5vw;
 }
 
- header .banners img {
+ header .logos img {
     height: 8vw;
 }
 
@@ -72,4 +77,10 @@ main{
     padding: 2vw;
     columns: 2;
     column-gap: 1.5vw;
+
   }
+  footer {
+    border: 5px solid;
+    height: 6vw;
+  }
+}
