@@ -25,27 +25,6 @@ header {
   text-align: center;
 }
 
-header::after {
-  content: " ";
-  position: absolute;
-  background-color: #2C9303;
-  right: 0;
-  top: 10vw;
-  width: 94%;
-  height: 3.3vw;
-  clip-path: polygon(0 0, 99% 15%, 99.2% 100%);
-}
-
-header::before {
-  content: " ";
-  position: absolute;
-  background-color: #1D6904;
-  right: 0;
-  top: 11vw;
-  width: 85%;
-  height: 4.6vw;
-  clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
-}
 
 header .logos {
   display: flex;
@@ -69,6 +48,20 @@ main {
   padding: 2vw;
   columns: 2;
   max-width: 100%;
+}
+
+.ceit{
+
+  width: 18vw;
+  height: auto;
+  margin:0;
+}
+
+.ceit img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
 }
 
 
